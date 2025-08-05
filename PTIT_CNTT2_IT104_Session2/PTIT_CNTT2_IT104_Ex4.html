@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-4</title>
+</head>
+
+<body>
+    <script>
+        function checkElement() {
+            let arr = arguments[0];
+            let element = arguments[1];
+
+            if (arr.includes(element)) {
+                console.log(`Trong mang co phan tu ${element}`);
+                return true;
+            } else {
+                console.log(`Trong mang khong co phan tu ${element}`);
+                return false;
+            }
+        }
+        checkElement([1, 2, 3, 4, 5], 3); // true
+        checkElement([1, 2, 3, 4, 5], 6); // false
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-2</title>
+</head>
+
+<body>
+    <script>
+        function greetingWithWeather(name, weather) {
+            let greeting = `Chao ${name} ! Hom nay `;
+            switch (weather) {
+                case "sunny":
+                    greeting += "troi nang tuyet voi !";
+                    break;
+                case "rainy":
+                    greeting += "mua, hay mang theo o !";
+                    break;
+                default:
+                    greeting += "thoi tiet khong xac dinh !";
+            }
+            return greeting;
+        }
+
+        console.log(greetingWithWeather("Nguyen An", "sunny"));
+        console.log(greetingWithWeather("Le Nam", "rainy"));
+        console.log(greetingWithWeather("Tran Tam", "cloudy"));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-3</title>
+</head>
+
+<body>
+    <script>
+        function typeConsole() {
+            let type = arguments[0];
+            let message = arguments[1] || "Day la type: ";
+            switch (type) {
+                case "log":
+                    console.log(message + "log");
+                    break;
+                case "warn":
+                    console.warn(message + "warn");
+                    break;
+                case "error":
+                    console.error(message + "error");
+                    break;
+                default:
+                    console.log(message + "log");
+            }
+        }
+
+        typeConsole("log");
+        typeConsole("warn");
+        typeConsole("error");
+        
+        typeConsole();
+    </script>
+</body>
+
+</html>

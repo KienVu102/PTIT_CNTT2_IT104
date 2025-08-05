@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-6</title>
+</head>
+
+<body>
+    <script>
+        function checkEndString() {
+            let str = arguments[0];
+            let endStr = arguments[1];
+
+            if (str.endsWith(endStr)) {
+                console.log(`Chuoi '${str}' ket thuc bang '${endStr}'`);
+                return true;
+            } else {
+                console.log(`Chuoi '${str}' khong ket thuc bang '${endStr}'`);
+                return false;
+            }
+        }
+
+        checkEndString("Hello World!", "Hello"); // false
+        checkEndString("Hi there!", "there"); // true
+    </script>
+</body>
+
+</html>

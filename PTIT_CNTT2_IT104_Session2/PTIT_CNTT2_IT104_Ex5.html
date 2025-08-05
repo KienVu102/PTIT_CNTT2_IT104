@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex-5</title>
+</head>
+
+<body>
+    <script>
+        const phoneBooks = [];
+
+        function addContact() {
+            const name = prompt("Nhap ten:");
+            const phone = prompt("Nhap so dien thoai:");
+            const email = prompt("Nhap email:");
+
+            if (name && phone && email) {
+                const contact = { name, phone, email };
+                phoneBooks.push(contact);
+                console.log("Da them lien he thanh cong:", contact);
+            } else {
+                console.log("Loi, khong the them lien he");
+            }
+        }
+
+        function displayContacts() {
+            if (phoneBooks.length === 0) {
+                console.log("Khong co lien he nao trong danh ba");
+                return;
+            }
+
+            console.log("Contacts:");
+            phoneBooks.forEach((contact, index) => {
+                console.log(`${index + 1}. Name: ${contact.name}, Phone: ${contact.phone}, Email: ${contact.email}`);
+            });
+        }
+
+        addContact();
+        displayContacts();
+
+
+
+    </script>
+</body>
+
+</html>
